@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"> </span>
+                </button>
+
+
+                <a class="navbar-brand" href="#myPage"><kbd>LUCKY</kbd></a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">Amenities</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="/openmodal"><i class="fa fa-user-plus"></i> &nbsp;Sign up</a></li>
+                    <li><a href="/accounts/login/"><i class="fa fa-user-circle-o"></i> &nbsp;Log
+                            in</a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>
+            <dt>LUCKY</dt>
+        </h1>
+        <p>Laxmikant somnat varkal</p>
+        <form>
+
+            <div class="input-group" id="o">
+                <input type="email" class="form-control" placeholder="enter location" style="background: #7dadec;"
+                    required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger" style="background:rgb(86, 4, 119);">Submit</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="w3-content" style="max-width:1300px">
+        <img class="mySlides" src="img.webp" style="width:100%">
+        <img class="mySlides" src="img2.jpg" style="width:100%">
+        <img class="mySlides" src="img3.webp" style="width:100%">
+    </div>
+    <div class="w3-center">
+        <div class="w3-section">
+            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)">1</button>
+        <button class="w3-button demo" onclick="currentDiv(2)">2</button>
+        <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-red", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-red";
+        }
+    </script>
+
+    <!-- Container (About Section) -->
+
+    <br>
+    <div id="about" class="container" style=" background-color:rgb(147, 242, 245);padding: 50px; border-radius:20px;">
+        <h1>Description</h1>
+        <p> The COVID19 pandemic has made us all understand the importance of sanitization
+            and not take it for
+            granted. Rest assured, we have reached out to our partners to uphold the highest standards of
+            sanitation and safety.<span id="dots">...</span><span id="more">
+                <br> Location:<br>
+                Moon Light Hotel is a quaint property situated in the bustling city of Kolkata. It is located in
+                Sukanta Pulli, Purba Talbagan.
+
+                <br><br> Special Features :<br>
+                The rooms follow a certain colour scheme, and they are decorated accordingly. This makes them
+                bright and colourful. There is also extra seating space in the rooms.
+
+                <br> <br> Amenities :<br>
+                Laundry service, Parking Facility, Pre Book Meals, Wooden Floors, AC, Kitchen, Geyser, Room
+                Service, Free Wifi, Jacuzzi, Elevator, Hair Dryer, Dining Area, Bar, Queen Sized Bed, Room
+                Ventilation, Complimentary Breakfast, In-house Restaurant, Room Area, Bath Tub, Card Payment,
+                HDTV, Conference Room, Power backup, Fan, Banquet Hall, Work Space, Mirror, CCTV Cameras are
+                some of the amenities available at this property.
+                <br> <br>What's Nearby :<br>
+                The place is located near famous tourist spots like Dakshineswar Kali Temple, American Church
+                and Pareshnath Temple.
+            </span></p><br>
+        <p style=" background-color:rgb(246, 228, 147);padding: 20px; border-radius:20px;"><i
+                class=" fas fa-exclamation-triangle " style="font-size:20px;color:rgb(0, 14, 15);"></i> ...please check
+            the
+            travel
+            advisory issued by the concerned state government
+            /local authorities before booking in some place may have COVID-19 related travel/lodging restriction.
+        </p>
+
+        <div class="col-sm-4">
+            <button class="btn btn-default btn-lg" onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+        <h2>Amenities</h2>
+        <h4>What we offer</h4>
+        <br>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <i class="fas fa-bed" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4>bed</h4>
+                <p>fully confortable bed</p>
+            </div>
+            <div class="col-sm-4">
+                <i class=" fas fa-snowflake" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4>AC</h4>
+                <p>ac keep tempreture cool</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fas fa-shower" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4>shower</h4>
+                <p>24 hour watar in shower</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <i class="fas fa-tv" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4>TV</h4>
+                <p>hd smart tv of sony</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fas fa-utensils" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4>Kitchen</h4>
+                <p>full functions kitchen</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="	fas fa-wifi" style="font-size:60px;color:rgb(54, 174, 214);"></i>
+                <h4 style="color:#303030;">WIFI</h4>
+                <p>1mb speed wifi </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+        <h2>Portfolio</h2><br>
+        <h4>Know your new home</h4>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>House Keeping</td>
+                                <td><button class="btn btn-info">Daily</button></td>
+                            </tr>
+                            <tr>
+                                <td>Owner Stays at property</td>
+                                <td><button class="btn btn-info">
+
+                                        No
+                                    </button></td>
+                            </tr>
+                            <!-- <tr>
+                        <td>Common Area</td>
+                        <td><button>Living Area</button><button> Kitchen</button><button> Dining Hall</button><button>BathRoom</button><button>Store Room</button></td>
+                      </tr> -->
+
+
+                            <tr>
+                                <td>Common Areas</td>
+                                <td>
+
+                                    <button class="btn btn-info">Balcony</button>
+
+                                    <button class="btn btn-info">Study Room</button>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Non-Veg Allowed</td>
+                                <td><button class="btn btn-info">
+
+
+                                        No
+
+
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>Visiters Allowed</td>
+                                <td><button class="btn btn-info">
+
+                                        Yes
+
+
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>Drinking and Smoking Allowed</td>
+                                <td><button class="btn btn-info">
+
+                                        Yes
+
+
+                                    </button></td>
+                            </tr>
+                            <tr>
+                                <td>Total Beds</td>
+                                <td><button class="btn btn-info"> 14</button></td>
+                            </tr>
+                            <!-- <tr>
+                        <td>Sharing type</td>
+                        <td><button> +5</button></td>
+                      </tr> -->
+
+
+
+
+                            <tr>
+                                <td>Sharing type</td>
+                                <td><button class="btn btn-info"> + 2</button></td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>Max. bed in a room</td>
+                                <td><button class="btn btn-info"> 2</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Landmarks Nearby</td>
+                                <td>
+
+                                    <button class="btn btn-info"> Gali No 6</button>
+
+                                </td>
+                            </tr>
+
+
+                            <tr>
+
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><br>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span>
+                    </span></h4>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
+        <!--div class="text-center">
+            <h2>Pricing</h2>
+            <h4>Choose a payment plan that works for you</h4>
+        </div>
+        <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>20</strong> Lorem</p>
+                        <p><strong>15</strong> Ipsum</p>
+                        <p><strong>5</strong> Dolor</p>
+                        <p><strong>2</strong> Sit</p>
+                        <p><strong>Endless</strong> Amet</p>
+                    </div>
+                    <div class="panel-footer">
+                        <h3>$19</h3>
+                        <h4>per month</h4>
+                        <button class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div-->
+        <div class="col-sm-4 col-xs-12">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <h1>Rent Details</h1>
+                </div>
+                <div class="panel-body">
+                    <p>Rent:<strong>$15</strong></p>
+                    <p>Security Deposit:<strong>$15</strong></p>
+                    <p>Booking Amount:<strong>$5</strong></p>
+                </div>
+                <div class="panel-footer">
+                    <h3>$35</h3>
+                    <h4>per month</h4>
+                    <button class="btn btn-lg">Book now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center bg-grey">
+            <div class="panel-footer">
+                <button class="btn btn-lg">Pg/hostel</button>
+                <button class="btn btn-lg">Elect. Not Incl</button>
+                <button class="btn btn-lg">Male only</button>
+                <button class="btn btn-lg">Meals Not Incl</button>
+                <button class="btn btn-lg">Fully Furnished</button>
+                <button class="btn btn-lg">Avaliable now</button>
+
+            </div>
+        </div>
+
+        <!--/div-->
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> solapur</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> varkallaxmikant62@something.com</p>
+                <br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <br>
+            </div>
+            <br>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                    rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+
+
+    <footer class="container-fluid text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading heading-background">How lucky is helping me
+                        <a href="/Policy/" data-toggle="popover" data-trigger="hover"
+                            data-content="Click to go on Policy page" class="fa fa-question-circle"></a>
+                        <!--  ADD LINK HERE LATER-  -->
+                    </h2>
+                    <div class="container_amn" style="margin-left:23px; margin-top: 2rem;">
+                        <ul_de>
+
+                            <li>For additional safety of everyone, our partners and their staff wears masks, uses
+                                sanitisers and maintains proper social distancing.</li>
+
+                            <li>During these hard times, we understand how important sanitisation and cleanliness are to
+                                you.<br>We make sure sanitisation of Floors, Rooms and Linens using good quality
+                                disinfectants.</li>
+
+                            <li>To book you just need to pay the booking amount now. Pay the rest while you move-in and
+                                this property accepts online payments through SheltOwn.</li>
+
+                            <li>We do not own this property, we are providing a platform to book it meanwhile making
+                                sure thaat each SheltOwn standards are being followed. <br>We never charge any Brokerage
+                                from anyone.</li>
+
+                        </ul_de>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>laxmikant varkal <a href="https://lucky0011198.github.io/luck/"
+                title="Visit lucky website">lucky0011198.github.io/luck</a>
+
+        </p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
+
+</html>
